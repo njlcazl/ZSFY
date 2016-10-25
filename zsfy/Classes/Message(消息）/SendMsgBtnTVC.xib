@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SendMsgBtnTVC">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCi-wM-z7U">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Gv-cb-OcJ">
+                        <rect key="frame" x="8" y="0.0" width="304" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发消息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZx-p8-l9B">
+                                <rect key="frame" x="127" y="11" width="51" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YZx-p8-l9B" firstAttribute="centerX" secondItem="3Gv-cb-OcJ" secondAttribute="centerX" id="Eg6-0V-AM3"/>
+                            <constraint firstItem="YZx-p8-l9B" firstAttribute="centerY" secondItem="3Gv-cb-OcJ" secondAttribute="centerY" id="Kxc-9x-DnY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="3Gv-cb-OcJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8Yg-aI-D0F"/>
+                    <constraint firstItem="XCi-wM-z7U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8rU-KW-X43"/>
+                    <constraint firstItem="XCi-wM-z7U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EpP-1T-PO2"/>
+                    <constraint firstAttribute="bottom" secondItem="3Gv-cb-OcJ" secondAttribute="bottom" id="SKk-pI-Hvd"/>
+                    <constraint firstItem="3Gv-cb-OcJ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-8" id="aXx-hl-mNM"/>
+                    <constraint firstItem="XCi-wM-z7U" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" id="d7w-dx-2Zn"/>
+                    <constraint firstItem="3Gv-cb-OcJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="isw-iQ-vPQ"/>
+                    <constraint firstItem="XCi-wM-z7U" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" id="ygc-JQ-Jv8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="SendBtn" destination="3Gv-cb-OcJ" id="VYw-mD-GGo"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

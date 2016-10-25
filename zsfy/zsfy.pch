@@ -1,0 +1,68 @@
+//
+//  zsfy.pch
+//  zsfy
+//
+//  Created by pyj on 15/11/9.
+//  Copyright (c) 2015年 wzy. All rights reserved.
+//
+
+#ifndef zsfy_zsfy_pch
+#define zsfy_zsfy_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "GloalDefine.h"
+#import "InfoManager.h"
+#import "UCSIMSDK.h"
+#import "SanboxHelper.h"
+#import "AddressBook.h"
+#import "ClientConvert.h"
+#import "AddressBookManager.h"
+#import "UINavigationItem+Barry.h"
+#import "MBProgressHUD+Add.h"
+#import "WatchDog.h"
+#import "UCConst.h"
+
+
+#import "UIBarButtonItem+Extension.h"
+#import "UIView+Extension.h"
+#import "NSString+Extension.h"
+//#import "MBProgressHUD+MJ.h"
+#import "MBProgressHUD.h"
+#import "CTB.h"
+#import "FSHttpTool.h"
+#import "MJRefresh.h"
+#import "MJExtension.h"
+#import "UIImageView+WebCache.h"
+#import "FYWebViewController.h"
+#import "FYModelFactory.h"
+#import "FYTableViewCell.h"
+#import <Availability.h>
+
+// 通知中心
+#define HWNotificationCenter [NSNotificationCenter defaultCenter]
+
+#define RECREATE_ROOT_VIEWCONTROLLER @"recreateRootViewController"
+
+#define baseUrl  @"http://183.63.189.107/PalmCourt/"
+#define DB_NAME @"zsfy00"
+
+#ifdef DEBUG // 处于开发阶段
+#define FYLog(...) NSLog(__VA_ARGS__)
+#else // 处于发布阶段
+#define FYLog(...)
+#endif
+
+
+
+
+// RGB颜色
+#define FYColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+//蓝色
+#define FYBlueColor [UIColor colorWithRed:(1)/255.0 green:(112)/255.0 blue:(194)/255.0 alpha:1.0]
+
+// 背景颜色
+#define FYBackgroundColor [UIColor colorWithRed:(235)/255.0 green:(235)/255.0 blue:(241)/255.0 alpha:1.0]
+
+#endif

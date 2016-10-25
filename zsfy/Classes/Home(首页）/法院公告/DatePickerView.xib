@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DatePickerView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixs-FZ-dcz">
+                    <rect key="frame" x="8" y="0.0" width="124" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="124" id="C4h-TH-3TW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSe-62-pnZ">
+                    <rect key="frame" x="241" y="0.0" width="79" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="79" id="6rF-DP-835"/>
+                    </constraints>
+                    <state key="normal" title="确定"/>
+                    <connections>
+                        <action selector="beginDateBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="1b0-Bw-G2n"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVy-hI-c1N">
+                    <rect key="frame" x="0.0" y="44" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="6vz-HN-21B"/>
+                    </constraints>
+                </view>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wuV-z0-W25" customClass="Date">
+                    <rect key="frame" x="0.0" y="44" width="320" height="216"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="216" id="cMf-3x-utk"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="478144321.84180999">
+                        <!--2016-02-26 01:52:01 +0000-->
+                    </date>
+                    <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                        <!--1970-01-01 11:00:00 +0000-->
+                    </date>
+                    <locale key="locale" localeIdentifier="zh_CN"/>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ixs-FZ-dcz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3K8-b8-E3R"/>
+                <constraint firstItem="GSe-62-pnZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7Q7-Ju-tnD"/>
+                <constraint firstItem="xVy-hI-c1N" firstAttribute="top" secondItem="GSe-62-pnZ" secondAttribute="bottom" id="9i0-tI-0Ne"/>
+                <constraint firstItem="wuV-z0-W25" firstAttribute="top" secondItem="ixs-FZ-dcz" secondAttribute="bottom" id="BV2-sP-QpW"/>
+                <constraint firstAttribute="trailing" secondItem="GSe-62-pnZ" secondAttribute="trailing" id="FbH-iA-BAE"/>
+                <constraint firstItem="wuV-z0-W25" firstAttribute="top" secondItem="GSe-62-pnZ" secondAttribute="bottom" id="JOX-6L-ZFJ"/>
+                <constraint firstAttribute="trailing" secondItem="xVy-hI-c1N" secondAttribute="trailing" id="LMS-QE-ejo"/>
+                <constraint firstItem="wuV-z0-W25" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XI5-VV-Lci"/>
+                <constraint firstItem="ixs-FZ-dcz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="bdc-3t-nYA"/>
+                <constraint firstAttribute="trailing" secondItem="wuV-z0-W25" secondAttribute="trailing" id="nNg-FF-MMj"/>
+                <constraint firstItem="xVy-hI-c1N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="y7n-Uz-lbe"/>
+                <constraint firstAttribute="bottom" secondItem="wuV-z0-W25" secondAttribute="bottom" id="yOl-FA-i3X"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="datePicker" destination="wuV-z0-W25" id="8uf-jB-mEX"/>
+                <outlet property="sureBtn" destination="GSe-62-pnZ" id="hUM-US-K2a"/>
+            </connections>
+            <point key="canvasLocation" x="201" y="328"/>
+        </view>
+    </objects>
+</document>

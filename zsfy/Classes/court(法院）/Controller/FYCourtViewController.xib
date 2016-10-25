@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FYCourtViewController">
+            <connections>
+                <outlet property="bgView" destination="pOc-3t-RT6" id="qsE-wm-kBY"/>
+                <outlet property="btn1" destination="Mhd-Fx-1J1" id="OBv-sU-PNK"/>
+                <outlet property="btn2" destination="4Bc-K0-CgA" id="N37-Fa-Upq"/>
+                <outlet property="btn3" destination="oZ3-2C-Ct2" id="aHI-uP-4PU"/>
+                <outlet property="lab1" destination="qVy-li-FxF" id="FHy-sj-3oC"/>
+                <outlet property="lab2" destination="DxH-NV-eqL" id="5Pr-mb-qaL"/>
+                <outlet property="lab3" destination="UbB-ei-rQT" id="HZ4-p1-bzV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOc-3t-RT6">
+                    <rect key="frame" x="0.0" y="130" width="320" height="308"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beijing" translatesAutoresizingMaskIntoConstraints="NO" id="7D9-iB-AnZ">
+                            <rect key="frame" x="32" y="54" width="255" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="255" id="qdB-pN-L94"/>
+                                <constraint firstAttribute="height" constant="200" id="zJW-va-US2"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="EqF-oL-3C5">
+                            <rect key="frame" x="116" y="54" width="88" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="88" id="8Ht-Jg-svj"/>
+                                <constraint firstAttribute="height" constant="20" id="nK9-yE-om8"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广州铁路运输中级法院" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVy-li-FxF">
+                            <rect key="frame" x="50" y="104" width="87" height="57"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="57" id="Cqu-SG-Qzf"/>
+                                <constraint firstAttribute="width" constant="87" id="FEN-Do-l9A"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhd-Fx-1J1">
+                            <rect key="frame" x="50" y="104" width="87" height="57"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="57" id="Ng2-5e-eck"/>
+                                <constraint firstAttribute="width" constant="87" id="koU-Bk-niZ"/>
+                            </constraints>
+                            <connections>
+                                <action selector="clickBtn1:" destination="-1" eventType="touchUpInside" id="AcB-5S-Pc6"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广州铁路运输第一法院" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbB-ei-rQT">
+                            <rect key="frame" x="133" y="172" width="82" height="61"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="82" id="8v7-Dg-4nS"/>
+                                <constraint firstAttribute="height" constant="61" id="bJe-Gt-8au"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZ3-2C-Ct2">
+                            <rect key="frame" x="139" y="169" width="71" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="71" id="4ct-R2-aE7"/>
+                                <constraint firstAttribute="height" constant="64" id="lbj-nx-4RY"/>
+                            </constraints>
+                            <connections>
+                                <action selector="clickBtn3:" destination="-1" eventType="touchUpInside" id="vpX-he-adu"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广州铁路运输第二法院" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DxH-NV-eqL">
+                            <rect key="frame" x="200" y="124" width="82" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="82" id="u1R-zv-7Cb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Bc-K0-CgA">
+                            <rect key="frame" x="200" y="114" width="70" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="FNm-Lu-1cR"/>
+                                <constraint firstAttribute="height" constant="58" id="ih0-Nf-P13"/>
+                            </constraints>
+                            <connections>
+                                <action selector="clickBtn2:" destination="-1" eventType="touchUpInside" id="T4g-So-x01"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="EqF-oL-3C5" firstAttribute="centerX" secondItem="7D9-iB-AnZ" secondAttribute="centerX" id="2Vi-mT-w6F"/>
+                        <constraint firstItem="DxH-NV-eqL" firstAttribute="centerY" secondItem="4Bc-K0-CgA" secondAttribute="centerY" constant="-1.5" id="AjD-oW-hDU"/>
+                        <constraint firstItem="DxH-NV-eqL" firstAttribute="centerX" secondItem="4Bc-K0-CgA" secondAttribute="centerX" constant="6" id="CUR-za-9D5"/>
+                        <constraint firstItem="7D9-iB-AnZ" firstAttribute="top" secondItem="qVy-li-FxF" secondAttribute="bottom" constant="-107" id="NED-UP-He6"/>
+                        <constraint firstItem="oZ3-2C-Ct2" firstAttribute="trailing" secondItem="7D9-iB-AnZ" secondAttribute="trailing" constant="-77" id="OLc-ap-fop"/>
+                        <constraint firstItem="qVy-li-FxF" firstAttribute="centerX" secondItem="Mhd-Fx-1J1" secondAttribute="centerX" id="P3Q-GB-67e"/>
+                        <constraint firstItem="7D9-iB-AnZ" firstAttribute="centerX" secondItem="pOc-3t-RT6" secondAttribute="centerX" id="QsN-22-O5w"/>
+                        <constraint firstItem="7D9-iB-AnZ" firstAttribute="centerY" secondItem="pOc-3t-RT6" secondAttribute="centerY" id="UAw-vw-hWN"/>
+                        <constraint firstItem="qVy-li-FxF" firstAttribute="leading" secondItem="7D9-iB-AnZ" secondAttribute="leading" constant="18" id="UGb-1B-aih"/>
+                        <constraint firstItem="7D9-iB-AnZ" firstAttribute="top" secondItem="oZ3-2C-Ct2" secondAttribute="bottom" constant="-179" id="YwY-1A-uR0"/>
+                        <constraint firstItem="UbB-ei-rQT" firstAttribute="centerY" secondItem="oZ3-2C-Ct2" secondAttribute="centerY" constant="1.5" id="ax3-tP-NsU"/>
+                        <constraint firstItem="qVy-li-FxF" firstAttribute="centerY" secondItem="Mhd-Fx-1J1" secondAttribute="centerY" id="ckF-h4-3n6"/>
+                        <constraint firstItem="4Bc-K0-CgA" firstAttribute="leading" secondItem="7D9-iB-AnZ" secondAttribute="leading" constant="168" id="iMd-7M-9lt"/>
+                        <constraint firstItem="UbB-ei-rQT" firstAttribute="centerX" secondItem="oZ3-2C-Ct2" secondAttribute="centerX" id="mxY-fo-mfC"/>
+                        <constraint firstItem="4Bc-K0-CgA" firstAttribute="bottom" secondItem="7D9-iB-AnZ" secondAttribute="bottom" constant="-82" id="qWJ-LV-GxE"/>
+                        <constraint firstItem="EqF-oL-3C5" firstAttribute="bottom" secondItem="7D9-iB-AnZ" secondAttribute="top" constant="20" id="rM2-dM-HZa"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="一点互动.png" translatesAutoresizingMaskIntoConstraints="NO" id="Htc-7C-jzo">
+                    <rect key="frame" x="100" y="100" width="121" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="121" id="MFJ-P6-dOF"/>
+                        <constraint firstAttribute="height" constant="22" id="coh-or-8F5"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Htc-7C-jzo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="5GQ-aG-NAd"/>
+                <constraint firstAttribute="trailing" secondItem="pOc-3t-RT6" secondAttribute="trailing" id="AHb-x3-OYh"/>
+                <constraint firstItem="pOc-3t-RT6" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Buh-gW-0am"/>
+                <constraint firstItem="pOc-3t-RT6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EcN-Qn-3LS"/>
+                <constraint firstItem="Htc-7C-jzo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cx0-Sf-c32"/>
+                <constraint firstItem="Htc-7C-jzo" firstAttribute="bottom" secondItem="pOc-3t-RT6" secondAttribute="top" constant="-8" id="wsH-GG-brA"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="beijing" width="259" height="235"/>
+        <image name="title" width="142" height="35"/>
+        <image name="一点互动.png" width="344" height="88"/>
+    </resources>
+</document>
